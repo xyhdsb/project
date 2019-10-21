@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<span th:if="${h} !=' '">
+		天空芝麻糊
+	</span>
+	<span th:switch="${h}">
+		<span th:case="hello">666</span>
+	</span>
+	
+	
+</body>
+</html>

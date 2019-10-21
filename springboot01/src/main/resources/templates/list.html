@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>账号</th>
+			<th>密码</th>
+			<th>下标</th>
+			<th>是否为第一个</th>
+			<th>是否为最后一个</th>
+			<th>是否为单数</th>
+			<th>是否为双数</th>
+			<th>大小</th>
+			<th>第几个</th>
+		</tr>
+		<tr th:each="i,j: ${lu}" style="text-align: center">
+			<td th:text="${i.uname}"></td>
+			<td th:text="${i.upwd}"></td>
+			<td th:text="${j.index}"></td>
+			<td th:text="${j.first}"></td>
+			<td th:text="${j.last}"></td>
+			<td th:text="${j.odd}"></td>
+			<td th:text="${j.even}"></td>
+			<td th:text="${j.size}"></td>
+			<td th:text="${j.count}"></td>
+		</tr>
+	</table>
+
+</body>
+</html>
